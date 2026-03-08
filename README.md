@@ -6,7 +6,7 @@
 **Authors:** Zongwu Cai, Ying Fang, Ming Lin, Yaqian Wu  
 **Paper link:** [Google Scholar entry](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=oHPEDJYAAAAJ&sortby=pubdate&citation_for_view=oHPEDJYAAAAJ:a9-T7VOCCH8C)
 
-This repository contains code to reproduce numerical results for the manuscript on Distribution Balancing methods for treatment effect estimation.
+This repository contains code to reproduce numerical results for the manuscript on Distribution Balancing methods.
 
 ## Repository structure
 
