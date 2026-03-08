@@ -7,7 +7,7 @@ library(caret)
 estimate_all_ccdfs_cv <- function(y, D, X, cvgroup, method_ccdf,est_ccdf_normlize, ...) {
   
   n <- length(y)
-  y_grid_or<-sort(unique(y))
+  y_grid<-sort(unique(y))
   
   if(est_ccdf_normlize=='TRUE'||est_ccdf_normlize==TRUE){
     X<-scale(X);
@@ -51,7 +51,7 @@ estimate_all_ccdfs_cv <- function(y, D, X, cvgroup, method_ccdf,est_ccdf_normliz
       }
     }
   }
-  return(list(CCDF0 = CCDF0, CCDF1 = CCDF1, y_grid = y_grid_or))
+  return(list(CCDF0 = CCDF0, CCDF1 = CCDF1, y_grid = y_grid))
 }
 
 est_ccdf<-function(y_train,X_train,X_predict,y_grid,method_ccdf,est_ccdf_normlize,...){
