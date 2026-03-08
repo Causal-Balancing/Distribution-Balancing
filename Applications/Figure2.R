@@ -1,4 +1,4 @@
-rm(list=ls())
+brm(list=ls())
 gc()
 
 # ====================1. Environment Setup & Libraries===============================
@@ -220,8 +220,7 @@ data_plot<-data.frame(cbind(taus_new,QTE_Epy3_new,ci_lower_new,ci_upper_new,
 library('ggplot2')
 ggplot(data_plot, aes(x = taus_new)) +
   scale_x_continuous(expand=c(0.015,0))+
-  geom_ribbon(aes(ymin = ci_lower_new, ymax = ci_upper_new), alpha = 0.2,linetype = 1) +  
-  #geom_ribbon(aes(ymin = CI_Lower_uniform, ymax = CI_Upper_uniform), alpha = 0.2,linetype = 1) +
+  geom_ribbon(aes(ymin = cb_lower_new, ymax = cb_upper_new), alpha = 0.2,linetype = 1) +  
   geom_line(aes(y = QTE_Epy3_new))+
   geom_line(aes(y = -205.4718),color='black',lty=4)+
   labs(x = "Quantiles", y = "Estimated QTE")  +
