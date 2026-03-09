@@ -36,28 +36,6 @@ devtools::install_github("raymondkww/ATE.ncb")
 devtools::install_github("chadhazlett/KBAL")
 ```
 
-## Quick start
-
-From repository root:
-
-```bash
-Rscript Main_Replicate_All.R
-```
-
-By default, the master script performs:
-
-1. Preflight checks for common path/dependency issues.
-2. Script discovery in `Simulations/` and `Applications/`.
-3. Optional batch execution with per-script logs.
-
-To run only simulation scripts:
-
-```r
-# In R
-source("Main_Replicate_All.R")
-run_all(replicate_simulations = TRUE, replicate_applications = FALSE, dry_run = FALSE)
-```
-
 ## Function reference 
 
 Below is a concise reference for functions in `R/` and `sim_utils/`.
