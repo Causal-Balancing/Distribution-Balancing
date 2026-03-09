@@ -14,7 +14,6 @@ This repository contains code to reproduce numerical results for the manuscript 
 - `sim_utils/`: Data-generating processes, benchmark methods, and utility functions used in simulations.
 - `Simulations/`: Scripts for simulation tables (Section 4 and appendix tables).
 - `Applications/`: Scripts and datasets for empirical and semi-synthetic applications (Section 5 and appendix).
-- `Main_Replicate_All.R`: Master script for preflight checks and batch replication.
 
 ## Requirements
 
